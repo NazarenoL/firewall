@@ -90,6 +90,7 @@ class Firewall
 		$this->fileSystem = $fileSystem;
 
 		$this->request = $request;
+		$this->request->setTrustedProxies($this->config->get('trusted_proxies'));
 
 		$this->migrator = $migrator;
 

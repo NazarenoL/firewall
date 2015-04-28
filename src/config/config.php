@@ -54,6 +54,15 @@ return array(
     ),
 
     /**
+    * Trusted proxies, on which the X-Forwarded-For parameter is considered
+    * @see http://symfony.com/doc/current/components/http_foundation/trusting_proxies.html
+    */
+    'trusted_proxies' => array(
+        // '123.123.123.123',
+        // '10.0.100.100'
+    ),
+
+    /**
     * Code and message for blocked responses
     *
     */
